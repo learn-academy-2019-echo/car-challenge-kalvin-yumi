@@ -1,6 +1,8 @@
 
 def path1
-    puts 'you chose easy mode.. Would you like to leave in the (1)morning or at (2)night?'
+    puts 'you chose easy mode.. Would you like to leave in the
+    (1)morning or at
+    (2)night?'
     option = gets().to_i
 
     if option == 1
@@ -10,21 +12,10 @@ def path1
     end
 end
 
-path2_inputs = [];
-inputs = {'question1' => nil, q2: 'lskdfl;skjdlsdjf' }
-
 def path2
-    puts 'question test (1) or (2)'
-    option = gets().to_i
-    puts 'question2 (1) or (2) '
-    option2 = gets().to_i
-
-    path2_inputs << option
-    path2_inputs << option2
+    puts 'Why would you ever pick hard mode?? you died right as you got onto the mountain..GAME OVER..try again..'
+    game
 end
-
-path2
-p path2_inputs
 
 
 def prompt_distance
@@ -128,7 +119,7 @@ def path1_9_axe_dead
 end
 
 def path1_10_traps
-    puts 'After a few hours all your traps worked!!..now you have food an batteries. Looks like the area you are in gets pretty cold at night.. (1)Would you like to walk another 3 miles to a safer area? OR (2)Would you like to find shelter near where you are? '
+    puts 'After a few hours all your traps worked!!..now you have food and batteries. Looks like the area youre in gets pretty cold at night.. (1)Would you like to walk another 3 miles to a safer area? OR (2)Would you like to find shelter near where you are? '
     option = gets().to_i
     if option == 1
         path1_11_dead
@@ -150,11 +141,12 @@ end
 
 
 def game
-    puts 'press 1 for adventure.. press 2 for better adventure'
+    puts 'Welcome to your first time hiking..
+press 1 for EASY mode.. press 2 for HARD mode..'
     option = gets().to_i
     if option == 1
         path1
-    elsif condition
+    else
         path2
     end
 end
@@ -180,15 +172,22 @@ game
 #
 # 'You left at 6:00pm.. You feel great but its a bit hard to see where youre going.. Would you like to grab some (1)extra food on the way or (2)some extra batteries'
 
-
-
-
-
-
-
+# path2_inputs = [];
+# inputs = {'question1' => nil, q2: 'lskdfl;skjdlsdjf' }
 #
+# def path2
+#     puts 'question test (1) or (2)'
+#     option = gets().to_i
+#     puts 'question2 (1) or (2) '
+#     option2 = gets().to_i
 #
+#     path2_inputs << option
+#     path2_inputs << option2
+# end
 #
+# path2
+# p path2_inputs
+
 # option = gets().to_i
 # if option == 1
 #     puts 'you chose easy mode.. Would you like to leave in the (1)morning or at (2)night?'
