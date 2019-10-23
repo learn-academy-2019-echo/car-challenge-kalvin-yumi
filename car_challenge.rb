@@ -1,4 +1,4 @@
-# Story: As a programmer, I can make a vehicle. Hint: Create a class called Vehicle, and create a variable called my_vehicle which contains an object of class Vehicle.
+# --------------------- #
 
 class Vehicle
     def initialize()
@@ -7,9 +7,6 @@ end
 
 my_vehicle = Vehicle.new
 
-#
-# Story: As a programmer, I can make a car. Hint: Create a class called Car, and create a variable called my_car which contains an object of class Car.
-#
 
 class Car
     def initialize(type, year)
@@ -77,46 +74,21 @@ class Car
     end
 end
 
-# my_car = Car.new
-
-
-# Story: As a programmer, I can tell how many wheels a car has; default is four. Hint: initialize the car to have four wheels, then create a method to return the number of wheels.
-#
 
 class Tesla < Car
 end
 
 
-# Story: As a programmer, I can make a Tesla car. Hint: Create an variable called my_tesla which is of class Tesla which inherits from class Car.
 collection = []
 
 my_tesla = Car.new('Tesla', 2019)
 my_tesla2 = Car.new('Tesla', 2000)
-# Story: As a programmer, I can make a Honda car.
 my_honda = Car.new('Honda', 2000)
 my_honda2 = Car.new('Honda', 2001)
-# Story: As a programmer, I can make a Toyota car.
 my_toyota = Car.new('Toyota', 2001)
 my_toyota2 = Car.new('Toyota', 2002)
 
-
-
 collection << my_honda << my_tesla << my_tesla2 << my_honda2 << my_toyota << my_toyota2
-#
-# years = collection.map{|el|
-#     el.instance_variable_get(:@year)
-# }.sort
-
-# def sort_type(arr)
-#     arr.sort!{ |a,b| a.type<=>b.type}
-# end
-#
-# def sort_year(arr)
-#     arr.sort!{ |a,b| a.year<=>b.year}
-# end
-#
-# sort_type(collection)
-# sort_year(collection)
 
 
 def sort_type(arr)
