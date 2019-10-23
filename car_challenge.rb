@@ -120,11 +120,11 @@ collection << my_honda << my_tesla << my_tesla2 << my_honda2 << my_toyota << my_
 
 
 def sort_type(arr)
-    arr.sort_by{ |a| [a.type, a.year] }
+    arr.sort_by!{ |a| [a.type, a.year] }
 end
 
-p sort_type(collection)
-
+sort_type(collection)
+p collection
 
 
 
